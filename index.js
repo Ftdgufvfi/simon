@@ -35,7 +35,7 @@ function checkAnswer(level,idx)
         setTimeout(function() {
             $('*').removeClass("game-over");
         }, 200);
-        var audio = new Audio("sounds/wrong.mp3");
+        var audio = new Audio("wrong.mp3");
         audio.play();
     }
 
@@ -57,7 +57,7 @@ function nextSequence()
 
 function playSound(color)
 {
-    var audio = new Audio("sounds/" + color + ".mp3");
+    var audio = new Audio(color + ".mp3");
     audio.play();
 }
 function addAnimation(color)
